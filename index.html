@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intranet Suite Preview</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="preview-body">
+    <div class="preview-shell">
+      <header class="preview-toolbar">
+        <div class="preview-brand">
+          <div class="brand-mark"></div>
+          <div>
+            <div class="preview-title">Intranet Suite</div>
+            <div class="preview-sub">Side-by-side device preview</div>
+          </div>
+        </div>
+      </header>
+
+      <main class="preview-stage">
+        <div class="device-preview device-iphone" data-device="iphone">
+          <div class="device-frame">
+            <img
+              class="device-image"
+              src="apple-iphone-13-mini-2021-medium.png"
+              alt="iPhone 13 mini device frame"
+            />
+            <div class="device-screen">
+              <iframe
+                class="preview-frame"
+                src="app.html"
+                title="Intranet app preview on iPhone"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <div class="device-caption">iPhone 13 mini</div>
+        </div>
+
+        <div class="device-preview device-macbook" data-device="macbook">
+          <div class="device-frame">
+            <img
+              class="device-image"
+              src="macbook-air-medium.png"
+              alt="MacBook Air device frame"
+            />
+            <div class="device-screen">
+              <iframe
+                class="preview-frame"
+                src="app.html"
+                title="Intranet app preview on MacBook"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+          <div class="device-caption">MacBook Air</div>
+        </div>
+      </main>
+    </div>
+
+    <button class="capture-fab" id="captureBtn" type="button">Capture</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="preview.js"></script>
+  </body>
+</html>
+

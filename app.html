@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intranet Suite</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <div class="brand-mark"></div>
+          <div class="brand-text">
+            <span class="brand-title">Intranet</span>
+            <span class="brand-sub">Operations Suite</span>
+          </div>
+        </div>
+        <nav class="nav" id="nav">
+          <button class="nav-item tab-trigger active" data-tab="hris">
+            <span class="nav-dot"></span>
+            <span>HRIS</span>
+          </button>
+          <button class="nav-item tab-trigger" data-tab="payroll">
+            <span class="nav-dot"></span>
+            <span>Payroll</span>
+          </button>
+          <button class="nav-item tab-trigger" data-tab="employees">
+            <span class="nav-dot"></span>
+            <span>Employees</span>
+          </button>
+          <button class="nav-item tab-trigger" data-tab="documents">
+            <span class="nav-dot"></span>
+            <span>Document Routing</span>
+          </button>
+          <button class="nav-item tab-trigger" data-tab="time">
+            <span class="nav-dot"></span>
+            <span>Time In/Out</span>
+          </button>
+        </nav>
+        <div class="sidebar-footer">
+          <div class="user-card">
+            <div class="avatar"></div>
+            <div>
+              <div class="user-name">Alex Rivera</div>
+              <div class="user-role">HR Administrator</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <header class="topbar">
+          <button class="icon-btn" id="menuToggle" aria-label="Toggle menu">
+            <span class="icon-line"></span>
+            <span class="icon-line"></span>
+          </button>
+          <div class="topbar-title">
+            <h1 id="pageTitle">HRIS</h1>
+            <p>People, policies, and performance in one place.</p>
+          </div>
+          <div class="topbar-actions">
+            <button class="ghost-btn">Notifications</button>
+            <button class="primary-btn">New Request</button>
+          </div>
+        </header>
+
+        <section class="content">
+          <div class="panel active" id="tab-hris">
+            <div class="grid two">
+              <div class="card hero">
+                <div>
+                  <h2>Workforce Overview</h2>
+                  <p>Track headcount, open roles, and engagement at a glance.</p>
+                </div>
+                <div class="stat-grid">
+                  <div class="stat">
+                    <span class="stat-label">Total Employees</span>
+                    <span class="stat-value">1,284</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Open Positions</span>
+                    <span class="stat-value">37</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Attrition</span>
+                    <span class="stat-value">2.1%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h3>Policy Updates</h3>
+                  <button class="ghost-btn small">View All</button>
+                </div>
+                <ul class="list">
+                  <li>
+                    <div>
+                      <strong>Hybrid Work Guidelines</strong>
+                      <span>Effective Mar 01</span>
+                    </div>
+                    <span class="badge">Updated</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>Benefits Enrollment</strong>
+                      <span>Close Apr 15</span>
+                    </div>
+                    <span class="badge">Action</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>Annual Review Cycle</strong>
+                      <span>Starts Apr 30</span>
+                    </div>
+                    <span class="badge">Planned</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="grid three">
+              <div class="card">
+                <h3>Leave Requests</h3>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div>
+                      <strong>24 pending approvals</strong>
+                      <span>Review within 24 hours</span>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div>
+                      <strong>13 upcoming absences</strong>
+                      <span>Apr 10 - Apr 21</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <h3>Performance Check-ins</h3>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 68%"></div>
+                </div>
+                <p class="muted">68% of teams completed Q1 reviews.</p>
+              </div>
+              <div class="card">
+                <h3>Compliance Training</h3>
+                <div class="stacked">
+                  <div>
+                    <span>Completed</span>
+                    <strong>91%</strong>
+                  </div>
+                  <div>
+                    <span>Overdue</span>
+                    <strong>3%</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="tab-payroll">
+            <div class="grid two">
+              <div class="card">
+                <h2>Payroll Snapshot</h2>
+                <p>Next payout: Apr 15, 2026</p>
+                <div class="stat-grid">
+                  <div class="stat">
+                    <span class="stat-label">Gross Pay</span>
+                    <span class="stat-value">$4.2M</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Net Pay</span>
+                    <span class="stat-value">$3.1M</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Deductions</span>
+                    <span class="stat-value">$1.1M</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <h3>Payroll Actions</h3>
+                  <button class="ghost-btn small">Run Preview</button>
+                </div>
+                <div class="action-grid">
+                  <button class="action-btn">Generate Payslips</button>
+                  <button class="action-btn">Export Bank File</button>
+                  <button class="action-btn">Sync Tax Tables</button>
+                  <button class="action-btn">Adjust Allowances</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3>Payroll Exceptions</h3>
+                <button class="ghost-btn small">Resolve All</button>
+              </div>
+              <div class="table">
+                <div class="table-row header">
+                  <span>Employee</span>
+                  <span>Issue</span>
+                  <span>Status</span>
+                  <span>Action</span>
+                </div>
+                <div class="table-row">
+                  <span>Camila Perez</span>
+                  <span>Overtime mismatch</span>
+                  <span>Pending</span>
+                  <button class="ghost-btn small">Review</button>
+                </div>
+                <div class="table-row">
+                  <span>Jordan Lee</span>
+                  <span>Bank details missing</span>
+                  <span>Blocked</span>
+                  <button class="ghost-btn small">Ping</button>
+                </div>
+                <div class="table-row">
+                  <span>Priya Singh</span>
+                  <span>Tax exemption update</span>
+                  <span>In progress</span>
+                  <button class="ghost-btn small">Update</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="tab-employees">
+            <div class="grid two">
+              <div class="card">
+                <h2>Employee Directory</h2>
+                <p>Search, filter, and manage profiles and assignments.</p>
+                <div class="search">
+                  <input type="text" placeholder="Search by name, role, or team" />
+                  <button class="ghost-btn">Search</button>
+                </div>
+                <div class="pill-row">
+                  <span class="pill">Active</span>
+                  <span class="pill">Onboarding</span>
+                  <span class="pill">Remote</span>
+                  <span class="pill">Contractor</span>
+                </div>
+              </div>
+              <div class="card">
+                <h3>Team Health</h3>
+                <div class="stat-grid">
+                  <div class="stat">
+                    <span class="stat-label">Engagement</span>
+                    <span class="stat-value">84%</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">eNPS</span>
+                    <span class="stat-value">41</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Retention</span>
+                    <span class="stat-value">96%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3>Top Performers</h3>
+                <button class="ghost-btn small">View Insights</button>
+              </div>
+              <div class="grid three">
+                <div class="profile-card">
+                  <div class="avatar large"></div>
+                  <div>
+                    <strong>Elena Torres</strong>
+                    <span>Product Design</span>
+                  </div>
+                  <span class="badge">Outstanding</span>
+                </div>
+                <div class="profile-card">
+                  <div class="avatar large"></div>
+                  <div>
+                    <strong>Marcus Chen</strong>
+                    <span>Data Science</span>
+                  </div>
+                  <span class="badge">High</span>
+                </div>
+                <div class="profile-card">
+                  <div class="avatar large"></div>
+                  <div>
+                    <strong>Lana Brooks</strong>
+                    <span>Operations</span>
+                  </div>
+                  <span class="badge">Strong</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="tab-documents">
+            <div class="grid two">
+              <div class="card">
+                <h2>Document Routing</h2>
+                <p>Route, approve, and archive documents securely.</p>
+                <div class="route-flow">
+                  <div class="route-step">
+                    <span>Draft</span>
+                  </div>
+                  <div class="route-step">
+                    <span>Manager</span>
+                  </div>
+                  <div class="route-step">
+                    <span>Legal</span>
+                  </div>
+                  <div class="route-step">
+                    <span>Final</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <h3>Routing Queue</h3>
+                <ul class="list">
+                  <li>
+                    <div>
+                      <strong>Vendor Contract</strong>
+                      <span>Awaiting Legal Review</span>
+                    </div>
+                    <span class="badge">2 days</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>Salary Adjustment</strong>
+                      <span>Manager Approval</span>
+                    </div>
+                    <span class="badge">6 hrs</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>Travel Request</strong>
+                      <span>Final Sign-off</span>
+                    </div>
+                    <span class="badge">Today</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3>Recent Activity</h3>
+                <button class="ghost-btn small">Export</button>
+              </div>
+              <div class="table">
+                <div class="table-row header">
+                  <span>Document</span>
+                  <span>Owner</span>
+                  <span>Status</span>
+                  <span>Updated</span>
+                </div>
+                <div class="table-row">
+                  <span>Benefits Policy</span>
+                  <span>J. Ramos</span>
+                  <span>Signed</span>
+                  <span>1 hr ago</span>
+                </div>
+                <div class="table-row">
+                  <span>Contract Renewal</span>
+                  <span>T. Blake</span>
+                  <span>Review</span>
+                  <span>3 hrs ago</span>
+                </div>
+                <div class="table-row">
+                  <span>Budget Memo</span>
+                  <span>O. Kim</span>
+                  <span>Draft</span>
+                  <span>Yesterday</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" id="tab-time">
+            <div class="grid two">
+              <div class="card">
+                <h2>Time In/Out</h2>
+                <p>Capture attendance using face and fingerprint biometrics.</p>
+                <div class="time-actions">
+                  <button class="primary-btn" data-scan="Face Time In">Time In (Face)</button>
+                  <button class="primary-btn" data-scan="Fingerprint Time In">Time In (Fingerprint)</button>
+                  <button class="ghost-btn" data-scan="Face Time Out">Time Out (Face)</button>
+                  <button class="ghost-btn" data-scan="Fingerprint Time Out">Time Out (Fingerprint)</button>
+                </div>
+                <div class="scan-status">
+                  <div class="scan-orb"></div>
+                  <div>
+                    <strong>Ready to scan</strong>
+                    <span>Connect device to begin verification.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <h3>Today</h3>
+                <div class="stat-grid">
+                  <div class="stat">
+                    <span class="stat-label">On Time</span>
+                    <span class="stat-value">91%</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Late</span>
+                    <span class="stat-value">6%</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-label">Remote</span>
+                    <span class="stat-value">3%</span>
+                  </div>
+                </div>
+                <div class="card-divider"></div>
+                <h4>Recent Scans</h4>
+                <ul class="list compact">
+                  <li>
+                    <div>
+                      <strong>08:12 AM</strong>
+                      <span>Face Time In - R. Cortez</span>
+                    </div>
+                    <span class="badge">Verified</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>08:21 AM</strong>
+                      <span>Fingerprint Time In - L. Brooks</span>
+                    </div>
+                    <span class="badge">Verified</span>
+                  </li>
+                  <li>
+                    <div>
+                      <strong>08:46 AM</strong>
+                      <span>Face Time In - D. Patel</span>
+                    </div>
+                    <span class="badge">Verified</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3>Device Readiness</h3>
+                <button class="ghost-btn small">Run Diagnostics</button>
+              </div>
+              <div class="grid three">
+                <div class="device-card">
+                  <span class="device-label">Front Cam</span>
+                  <strong>Connected</strong>
+                  <div class="device-pill">Face</div>
+                </div>
+                <div class="device-card">
+                  <span class="device-label">Fingerprint Reader</span>
+                  <strong>Connected</strong>
+                  <div class="device-pill">Fingerprint</div>
+                </div>
+                <div class="device-card">
+                  <span class="device-label">Gate Terminal</span>
+                  <strong>Online</strong>
+                  <div class="device-pill">Access</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <nav class="bottom-nav" id="bottomNav">
+        <button class="bottom-item tab-trigger active" data-tab="hris">
+          <span class="bottom-icon">HR</span>
+          <span>HRIS</span>
+        </button>
+        <button class="bottom-item tab-trigger" data-tab="payroll">
+          <span class="bottom-icon">$</span>
+          <span>Payroll</span>
+        </button>
+        <button class="bottom-item tab-trigger" data-tab="employees">
+          <span class="bottom-icon">EMP</span>
+          <span>Employees</span>
+        </button>
+        <button class="bottom-item tab-trigger" data-tab="documents">
+          <span class="bottom-icon">DOC</span>
+          <span>Docs</span>
+        </button>
+        <button class="bottom-item tab-trigger" data-tab="time">
+          <span class="bottom-icon">TIME</span>
+          <span>Time</span>
+        </button>
+      </nav>
+      <button class="fab" id="fabAction" aria-label="New Request">+</button>
+    </div>
+
+    <div class="modal" id="scanModal" aria-hidden="true">
+      <div class="modal-content">
+        <div class="modal-orb"></div>
+        <h3 id="scanTitle">Biometric Scan</h3>
+        <p id="scanMessage">Align to capture verification.</p>
+        <div class="modal-actions">
+          <button class="ghost-btn" id="cancelScan">Cancel</button>
+          <button class="primary-btn" id="completeScan">Complete</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
